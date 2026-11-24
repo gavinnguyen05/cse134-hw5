@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gavin Nguyen's product design portfolio">
+  <title>Gavin Nguyen | Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E8%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+  <header>
+    <p><a href="index.html">Gavin Nguyen</a></p>
+    <nav aria-label="Main navigation">
+      <a href="#work-heading">Work</a>
+      <a href="about.html">About</a>
+      <a href="playground.html">Playground</a>
+      <a href="form-no-js.html">Contact</a>
+      <a href="form-with-js.html">Contact (JS)</a>
+      <button type="button" id="theme-toggle" hidden>Switch to dark theme</button>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="intro-heading">
+      <h1 id="intro-heading">Hi, I'm Gavin</h1>
+      <p>I'm building for a future we're not yet ready for.</p>
+      <p>San Diego, California</p>
+    </section>
+
+    <section class="work" aria-labelledby="work-heading">
+      <h2 id="work-heading">Selected Work</h2>
+
+      <article>
+        <h3><a href="easy-does-it.html">Easy Does It</a></h3>
+      </article>
+
+      <article>
+        <h3>PayPal Agent Access</h3>
+      </article>
+
+      <article>
+        <h3>Venmo Bloom</h3>
+        <p>2nd Place at USC Designathon</p>
+      </article>
+    </section>
+  </main>
+
+  {% include "footer.njk" %}
+</body>
+</html>

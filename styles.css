@@ -153,6 +153,28 @@ svg {
     background-color: #ffffff;
 }
 
+/* fact panel colors follow the light and dark portfolio themes */
+:root {
+    --panel-background: var(--bg-color);
+    --panel-text: var(--text-color);
+    --panel-border: var(--border-color);
+}
+
+/* custom elements are inline by default, so make the panel a block box */
+fact-panel {
+    display: block;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid var(--panel-border, #cccccc);
+    background-color: var(--panel-background, #ffffff);
+    color: var(--panel-text, #333333);
+}
+
+/* room for two lines (line-height 1.5), so the button doesn't move between facts */
+.fact-text {
+    min-height: 3em;
+}
+
 .work {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
